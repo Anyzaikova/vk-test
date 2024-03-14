@@ -1,0 +1,21 @@
+.age_by_name_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    gap: 10px;
+}
+.age_by_name_heading {
+    white-space: normal;
+}
+.age_by_name_btn {
+
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #d7e3da;
+}
+.age_by_name_btn:hover {
+    background-color: cadetblue;
+    border-color: cadetblue;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}

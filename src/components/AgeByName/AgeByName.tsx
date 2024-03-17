@@ -18,7 +18,8 @@ const AgeByName: React.FC = () => {
     const nameRef = useRef<string>('');
     let timeoutId: NodeJS.Timeout;
     const schema = yup.object().shape({
-        name: yup.string().required('Введите имя').matches(/^[A-Za-z]+$/, 'Имя должно содержать только английские буквы')
+        name: yup.string().required('Введите имя').matches(/^[A-Za-z]+$/,
+            'Имя должно содержать только английские буквы')
     });
     const { register, handleSubmit, formState: { errors } } = useForm(
         {

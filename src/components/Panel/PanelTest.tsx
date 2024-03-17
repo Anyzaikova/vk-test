@@ -10,13 +10,13 @@ const PanelTest: React.FC = () => {
         <View activePanel={activePanel}>
             <Panel id="panel1">
                 <Group>
-                    <CellButton onClick={() => setActivePanel('panel2')}>Go to panel 2</CellButton>
+                    <CellButton onClick={() => setActivePanel('panel2')}>Перейти к возрасту</CellButton>
                     <CatFact />
                 </Group>
             </Panel>
             <Panel id="panel2">
                 <Group>
-                    <CellButton onClick={() => setActivePanel('panel1')}>Go to panel 1</CellButton>
+                    <CellButton onClick={() => setActivePanel('panel1')}>Перейти к котикам</CellButton>
                     <AgeByName />
                 </Group>
             </Panel>
